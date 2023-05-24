@@ -48,14 +48,31 @@ public class DoublyLinkedList {
             tail = newNode;
         }
         else {
-            Node temp = null ;
-            temp = tail;
             tail.next = newNode;
+            newNode.prev = tail ;
             tail = newNode;
-            tail.prev = temp;
 
         }
         length++;
+
+    }
+
+
+    public Node removeLast(){
+        if (length == 0)
+            return null;
+        if (length == 1) {
+            tail = null;
+            length --;
+            return head = null;
+        }
+
+        Node temp = tail;
+        tail = tail.prev;
+        tail.next = null ;
+        temp.prev = null;
+        length--;
+        return temp;
 
     }
 }

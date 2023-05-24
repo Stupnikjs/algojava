@@ -20,8 +20,12 @@ class Main {
 
         myDLL.append(5);
         myDLL.append(6);
+
         myDLL.printList();
 
+        myDLL.removeLast();
+
+        myDLL.printList();
 
 
     }
