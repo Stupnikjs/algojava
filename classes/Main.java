@@ -9,23 +9,23 @@ class Main {
         DoublyLinkedList myDLL = new DoublyLinkedList(8);
 
         System.out.println("---------------");
-        myDLL.getHead();
-        myDLL.getLength();
-        myDLL.getTail();
+
+        myDLL.prepend(5);
+        myDLL.prepend(153);
+        myDLL.prepend(8);
         myDLL.printList();
+        System.out.println("---------------");
+        myDLL.removev2(2);
+
+        myDLL.printList();
+
 
 
         System.out.println("---------------");
-
-
-        myDLL.append(5);
-        myDLL.append(6);
+        myDLL.remove(1);
 
         myDLL.printList();
 
-        myDLL.removeLast();
-
-        myDLL.printList();
 
 
     }
