@@ -11,7 +11,9 @@ public class main {
 
 
         System.out.println(myHashTable.get("michel"));
-
+        System.out.println(myHashTable.get("mi"));
         myHashTable.printTable();
+
+        System.out.println(myHashTable.keys());
     }
 }
