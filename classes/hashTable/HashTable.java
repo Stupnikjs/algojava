@@ -85,14 +85,5 @@ public class HashTable {
     }
 
 
-    public static boolean itemInCommon(int[] array1, int[] array2){
-        HashMap<Integer, Boolean> myHashMap = new HashMap<>();
-        for(int i = 0 ; i < array1.length; i++ ){
-            myHashMap.put(i , true);
-        }
-        for(int j = 0; j < array2.length; j++){
-            if (myHashMap.get(j) != null ) return true ;
-        }
-        return false;
-    }
+
 }
